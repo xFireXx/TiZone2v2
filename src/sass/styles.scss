@@ -1,3 +1,17 @@
-body {
-  background-color: red;
+$primary-color: #FFDE03;
+$secondary-color: #0336FF;
+
+html {
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+  scroll-behavior: smooth;
 }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $primary-color;
+}
+
