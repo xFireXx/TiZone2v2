@@ -1,0 +1,42 @@
+.card-career {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -50px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    width: 280px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.card > span {
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+@media all and (min-width: 1080px) {
+    .card-career {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+
+@media all and (min-width: 1280px) {
+    .card-career {
+        flex-direction: row;
+        gap: 20px;
+        top: -70px;
+    }
+}
