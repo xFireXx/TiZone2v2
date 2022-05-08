@@ -1,0 +1,48 @@
+.ranking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.first-ranking,
+.second-ranking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-rank {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+.text {
+    width: 300px;
+}
+
+.rank {
+    width: 45vh;
+    height: 200px;
+    background-color: $secondary-color;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+@media all and (min-width: 1280px) {
+    .ranking {
+        flex-direction: row;
+    }
+
+    .card-rank {
+        margin: 15px;
+    }
+}
