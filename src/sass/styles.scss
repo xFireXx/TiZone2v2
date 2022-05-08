@@ -1,79 +1,116 @@
 @import "colors";
 
 html {
-  box-sizing: border-box;
-  font-family: 'Noto Sans', sans-serif;
-  scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-  background-color: $primary-color;
+    background-color: $primary-color;
 }
 
 .nav {
-  background-color: #fff;
-  height: 10%;
+    background-color: #fff;
+    height: 10%;
 }
 
 .nav-active {
-  height: 300px;
-  font-weight: bold;
+    height: 15.625rem;
+    font-weight: bold;
 }
 
 .menu {
-  display: none;
+    display: none;
+    text-transform: uppercase;
 }
 
 .menu-active {
-  display: flex;
-  position: absolute;
-
+    display: flex;
+    position: absolute;
 }
 
 .navigation {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .nav-div {
-  margin: 2%;
+    margin: 2%;
 }
 
 .nav-div:nth-child(1) {
-  flex-grow: 2;
+    flex-grow: 2;
 }
 
 .h2-logo {
-  color: #000;
+    color: #000;
 }
 
 .span-logo {
-  color: $secondary-color;
+    color: $secondary-color;
 }
 
 .nav-div > span {
-  font-size: 1.75rem;
-  cursor: pointer;
-  margin-top: 1.25rem;
+    font-size: 1.75rem;
+    cursor: pointer;
+    margin-top: 1.25rem;
 }
 
 .menu > ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .menu > ul > li {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
-.menu > ul > li > a{
-  text-decoration: none;
-  color: #000;
+.menu > ul > li > a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media all and (min-width: 800px) {
+    .menu > ul {
+        flex-direction: row;
+    }
+    .menu > ul > li {
+        margin-top: 10px;
+        margin-left: 1.25rem;
+    }
+
+    .nav-active {
+        height: 11rem;
+    }
+}
+
+@media all and (min-width: 1280px) {
+    .nav {
+        height: 8%;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .h2-logo {
+        font-size: 3rem;
+    }
+    .nav-div:nth-child(2),
+    .nav-div:nth-child(3) {
+        display: none;
+    }
+    .nav-div:nth-child(1) {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
