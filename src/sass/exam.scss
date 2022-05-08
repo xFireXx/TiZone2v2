@@ -1,0 +1,36 @@
+.exams {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.exam-card {
+    width: 280px;
+    height: 300px;
+    background-color: $secondary-color;
+    margin-top: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+@media all and (min-width: 800px) {
+    .exams {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+@media all and (min-width: 1280px) {
+    .exams {
+        flex-direction: column;
+    }
+    .first-exams,
+    .second-exams {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
