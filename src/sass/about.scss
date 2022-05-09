@@ -1,0 +1,33 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    padding: 5px 0 25px 0;
+}
+
+.about-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+@media all and (min-width: 1280px) {
+    .about {
+        flex-direction: row;
+    }
+
+    .about-flex {
+        width: 400px;
+        margin-left: 10%;
+    }
+}

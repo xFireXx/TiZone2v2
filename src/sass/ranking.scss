@@ -28,13 +28,19 @@
 }
 
 .rank {
-    width: 45vh;
+    width: 300px;
     height: 200px;
     background-color: $secondary-color;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
     gap: 20px;
+}
+
+@media all and (min-width: 667px) {
+    .rank {
+        width: 350px;
+    }
 }
 
 @media all and (min-width: 1280px) {
